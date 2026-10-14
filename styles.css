@@ -1,27 +1,58 @@
+@font-face {
+  font-family: 'Odin';
+  src: url('./fonts/norse/Norsebold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 body{
     display: flex;
     margin: 0;
     height: 100dvh;
 }
-
+.form-container{
+    flex:2 1 auto;
+}
 .leaf-container{
+    display: flex;
+    flex-direction: column;
+
     background-image: url("./img/leafs.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+
     height: 100dvh;
+    min-width: 30dvw;
     color:mintcream;
+    flex: 1 1 auto;
 }
 
 .leaf-container span{
     text-decoration: underline;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
 }
 
 .odin-logo-img{
-    height: 80px;
+    height: 90px;
 }
 
 .odin-logo-container{
     display: flex;
-    background-color: rgb(50 50 50 / 0.6);
+
+    font-family: 'Odin', sans-serif;
+    font-size: 100px;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px 10px;
+    margin-top: 30%;
+    background-color: rgb(10 10 10 / 0.6);
+}
+.credit-line{
+    /*Need to make this appear at the bottom of the leaf container*/
+    margin-top: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding: 10px;
 }
