@@ -1,0 +1,27 @@
+body{
+    display: flex;
+    margin: 0;
+    height: 100dvh;
+}
+
+.leaf-container{
+    background-image: url("./img/leafs.avif");
+    height: 100dvh;
+    color:mintcream;
+}
+
+.leaf-container span{
+    text-decoration: underline;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.odin-logo-img{
+    height: 80px;
+}
+
+.odin-logo-container{
+    display: flex;
+    background-color: rgb(50 50 50 / 0.6);
+}
