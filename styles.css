@@ -10,9 +10,12 @@ body{
     display: flex;
     margin: 0;
     height: 100dvh;
+    background-color: #f0f0f3d8;
 }
 .form-container{
     flex:2 1 auto;
+    margin-top: 15dvh;
+    margin-bottom: 15dvh;
 }
 .leaf-container{
     display: flex;
@@ -55,4 +58,58 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     padding: 10px;
+}
+
+.form-heading-text,
+legend{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.text-margin{
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+form{
+    background-color: white;
+}
+fieldset{
+    /* background-color: white; */
+    margin-left: 50px;
+    border: none;
+}
+button{
+    border:none;
+    border-radius: 10px;
+    padding:10px;
+    color: white;
+    background-color: #596D48;
+}
+button:hover{
+    background-color: #3b4b2e;
+}
+/* sooo for the form items we can either use flexbox or grid, idk how to use grid yet, soo flex for now
+    we will need to create a whole container for all the items then a column directed container for the two columns
+*/
+.form-items-container{
+    display: flex;
+    gap: 50px;
+}
+.form-items-1,
+.form-items-2{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    flex-direction: column;
+}
+
+label{
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 70%;
+}
+input{
+    border-radius: 5px;
 }
