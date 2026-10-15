@@ -11,6 +11,7 @@ body{
     margin: 0;
     height: 100dvh;
     background-color: #f0f0f3d8;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .form-container{
     flex:2 1 auto;
@@ -74,6 +75,8 @@ legend{
 }
 form{
     background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 fieldset{
     /* background-color: white; */
@@ -110,6 +113,30 @@ label{
     font-family: Arial, Helvetica, sans-serif;
     opacity: 70%;
 }
+/* This is the input validation etc stuff */
 input{
+    border: 1px solid grey;
+    background-color: whitesmoke;
     border-radius: 5px;
+    min-width: 100px;
+    width: 300px;
+    height: 20px;
+}
+input:focus{
+    border: 1px solid rgb(58, 58, 253);
+    outline: none; /*Removes default browser outline*/
+    box-shadow: 0px 2px 5px grey;
+}
+
+input:invalid{
+    border: 1px solid rgb(218, 58, 58);
+}
+
+.login-span{
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 70%;
+}
+
+.margin-top-10px{
+    margin-top: 20px; /*Me when i spread misinformation*/
 }

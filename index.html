@@ -25,29 +25,32 @@
             You <em>know</em> you want to.
         </div>
 
-        <form id="theForm">
+        <form id="theForm" action="" method="get">
             <fieldset>
                 <legend>Let's do this!</legend>
                 <div class="form-items-container">
                     <div class="form-items-1">
                         <label for="first-name">FIRST NAME</label>
-                        <input id="first-name" name="first-name" type="text">
+                        <input id="first-name" name="first-name" type="text" minlength="2" maxlength="20">
 
-                        <label for="last-name">LAST NAME</label>
-                        <input id="last-name" name="last-name" type="text">
+                        <label for="email" class="margin-top-10px">EMAIL</label>
+                        <input id="email" name="email" type="email" minlength="5" maxlength="30">
 
-                        <label for="email">EMAIL</label>
-                        <input id="email" name="email" type="email">
+                        <label for="password" class="margin-top-10px">PASSWORD</label>
+                        <input id="password" name="password" type="password" minlength="6" maxlength="30" required>
+
+                        
+
                     </div>
                     <div class="form-items-2">
-                        <label for="phone-number">PHONE NUMBER</label>
-                        <input id="phone-number" name="phone-number" type="text">
+                        <label for="last-name">LAST NAME</label>
+                        <input id="last-name" name="last-name" type="text" minlength="3" maxlength="20">
 
-                        <label for="password">PASSWORD</label>
-                        <input id="password" name="password" type="password">
+                        <label for="phone-number" class="margin-top-10px">PHONE NUMBER</label>
+                        <input id="phone-number" name="phone-number" type="tel" pattern="+27[0-9]{9}" placeholder="+27123456789">
 
-                        <label for="confirm-password">CONFIRM PASSWORD</label>
-                        <input id="confirm-password" name="confirm-password" type="password">
+                        <label for="confirm-password" class="margin-top-10px">CONFIRM PASSWORD</label>
+                        <input id="confirm-password" name="confirm-password" type="password" minlength="6" maxlength="30" required>
                     </div>
                 </div>
             </fieldset>
@@ -56,7 +59,7 @@
             <button type="submit" form="theForm">Create Account</button>
         </div>
         <div class="text-margin">
-            Already have an account? <span>Log in</span>
+            Already have an account? <span class="login-span">Log in</span>
         </div>
     </div>
 </body>
